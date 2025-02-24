@@ -88,6 +88,8 @@ a:hover {
     background-color: white;
     border-radius: 10px;
     padding-left: 4%;
+    display: inline-block;
+    margin-top: 20px; 
 }
 
 .contain-prod1,
@@ -99,4 +101,12 @@ a:hover {
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    text-align: center;
 }
+
+.description {
+    margin-top: -20px; 
+    display: inline-block;
+    width: 300px; 
+}
+
