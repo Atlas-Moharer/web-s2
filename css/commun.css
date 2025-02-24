@@ -4,8 +4,67 @@ body {
     background-color: rgb(247, 225, 195);
 }
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-image: url('../images/background.jpg');
+    /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+}
+
+.titre {
+    font-size: 5em;
+    color: white;
+    font-weight: bold;
+}
+
+.categories {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Ensure they stack vertically */
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items to the left */
+}
+
+.categorie-b {
+    background-color: transparent;
+    /* Keeping the background transparent to blend with the background image */
+    color: white;
+    text-decoration: none;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    /* Adding a gap between the categories */
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+.categories a {
+    display: block;
+    margin-bottom: 20px;
+    /* Adding a gap between the categories */
+}
+
 h1 {
-    color: pink
+    color: rgb(70, 63, 64)
 }
 
 ul {
@@ -14,17 +73,14 @@ ul {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: rgb(218, 22, 117);
 }
 
 a:hover {
     text-decoration: none;
 }
-.img {
-        border-radius: 30px;
-        box-shadow: 2px 0px 3px ;
-}
-.contain-link{
+
+.contain-link {
     border: 1px solid black;
     width: 30%;
     height: 30px;
@@ -34,9 +90,12 @@ a:hover {
     padding-left: 4%;
 }
 
-.contain-prod1{
+.contain-prod1,
+.contain-prod2,
+.contain-prod3,
+.contain-prod4 {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
